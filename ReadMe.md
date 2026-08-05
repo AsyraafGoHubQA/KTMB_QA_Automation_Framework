@@ -356,4 +356,3 @@ Before executing any automation, ensure the following tasks have been completed.
 ---
 
 Your machine is now fully configured and ready to develop and execute automation tests using the Playwright + Python Automation Framework.
->>>>>>> b3a8bda (Update README with environment setup guide)
