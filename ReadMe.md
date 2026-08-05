@@ -78,7 +78,7 @@ Open VS Code and install these extensions:
 ---
 
 # 4. Clone the Project
-
+--Can skip this part first.
 Download the project from GitHub:
 
 ```bash
@@ -137,19 +137,7 @@ Once activated, you will see:
 
 ---
 
-# 8. Install Dependencies
-
-Install all required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-👉 This installs everything needed for the framework to run.
-
----
-
-# 9. Install Playwright
+# 8. Install Playwright
 
 Install Playwright:
 
@@ -167,7 +155,7 @@ playwright install
 
 ---
 
-# 10. Verify Playwright Installation
+# 9. Verify Playwright Installation
 
 ```bash
 playwright --version
@@ -177,7 +165,7 @@ If you see a version number, Playwright is installed successfully ✅
 
 ---
 
-# 11. Configure Python in VS Code
+# 10. Configure Python in VS Code
 
 1. Press **Ctrl + Shift + P**
 2. Search: **Python: Select Interpreter**
@@ -193,7 +181,7 @@ Example:
 
 ---
 
-# 12. Git Workflow (Daily Use)
+# 11. Git Workflow (Daily Use)
 
 ## Get latest code
 
