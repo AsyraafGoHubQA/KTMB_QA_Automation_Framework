@@ -1,135 +1,135 @@
-Here is your **cleaned, more natural, and user-friendly README.md version** formatted for VS Code / GitHub usage. I’ve simplified the language, improved flow, and made it feel more like a real engineering team document.
-
----
-
-# ReadMe : Playwright + Python Automation Framework
+# Playwright + Python Automation Framework
 
 ## Environment Setup Guide
 
 Welcome! 👋
-This guide will help you set up your machine so you can run and develop automation tests using the Playwright + Python framework.
 
-Please follow the steps in order before running any tests.
+This guide explains how to set up your development environment before using the Playwright + Python Automation Framework.
+
+Please complete all the steps below before running any automation tests.
 
 ---
 
 # 1. Prerequisites
 
-Before starting, make sure the following tools are installed on your system:
+Before starting, ensure the following software is installed on your machine.
 
-| Tool               | Recommended Version | Download Link                     |
-| ------------------ | ------------------- | --------------------------------- |
-| Python             | 3.12 or later       | https://www.python.org/downloads/ |
-| Visual Studio Code | Latest              | https://code.visualstudio.com/    |
-| Git                | Latest              | https://git-scm.com/downloads     |
-| Google Chrome      | Latest              | https://www.google.com/chrome/    |
+| Tool | Recommended Version | Download |
+|------|----------------------|----------|
+| Python | 3.12 or later | https://www.python.org/downloads/ |
+| Visual Studio Code | Latest | https://code.visualstudio.com/ |
+| Git | Latest | https://git-scm.com/downloads |
+| Google Chrome | Latest | https://www.google.com/chrome/ |
 
 ---
 
-#PS : "Bash" means typing commands into a shell
+> **Note**
+>
+> All commands shown in this guide are shell commands.
+> Windows users can execute them using **VS Code Terminal**, **PowerShell**, **Command Prompt**, or **Git Bash**.
+
+---
 
 # 2. Verify Installation
 
-Open **Command Prompt (Windows)** or **Terminal (Mac/Linux)** and run the following commands.
+Open **Command Prompt**, **PowerShell**, **Git Bash**, or the **VS Code Terminal**.
 
-## Check Python
+## Verify Python Installation
 
 ```bash
 python --version
 ```
 
-You should see something like:
+Expected Output
 
 ```text
 Python 3.12.x
 ```
 
-👉 This confirms Python is installed correctly.
+This confirms Python has been installed successfully.
 
 ---
 
-## Check Git
+## Verify Git Installation
 
 ```bash
 git --version
 ```
 
-You should see:
+Expected Output
 
 ```text
 git version x.x.x
 ```
 
-👉 This confirms Git is installed correctly.
+This confirms Git has been installed successfully.
 
 ---
 
 # 3. Install VS Code Extensions
 
-Open VS Code and install these extensions:
+Open Visual Studio Code and install the following extensions.
 
-| Extension                   | Purpose                           |
-| --------------------------- | --------------------------------- |
-| Python                      | Python support                    |
-| Pylance                     | IntelliSense and code suggestions |
-| Playwright Test for VS Code | Run and debug tests               |
-| GitLens (Optional)          | Better Git history view           |
+| Extension | Required | Purpose |
+|-----------|----------|---------|
+| Python | ✅ | Python language support |
+| Pylance | Recommended | IntelliSense and code completion |
+| Playwright Test for VS Code | Recommended | Execute and debug Playwright tests |
+| GitLens | Optional | Enhanced Git history |
 
 ---
 
+<<<<<<< HEAD
 # 4. Clone the Project
 --Can skip this part first.
 Download the project from GitHub:
+=======
+# 4. Clone the Repository
+
+Clone the automation project from GitHub.
+>>>>>>> b3a8bda (Update README with environment setup guide)
 
 ```bash
-git clone <GitHub Repository URL>
+git clone https://github.com/AsyraafGoHubQA/KTMB_QA_Automation_Framework.git
 ```
 
-👉 This copies the project to your local machine.
-
-Move into the project folder:
+Navigate to the Login Module project.
 
 ```bash
-cd automation-framework
+cd "Login Module"
 ```
 
 ---
 
-# 5. Open Project in VS Code
+# 5. Open the Project in Visual Studio Code
 
-1. Open **Visual Studio Code**
-2. Click **File → Open Folder**
-3. Select the cloned project folder
+1. Open Visual Studio Code.
+2. Click **File → Open Folder**.
+3. Select the **Login Module** folder.
 
 ---
 
-# 6. Create Virtual Environment
+# 6. Create a Virtual Environment
 
-We use a virtual environment to keep dependencies clean and isolated.
+Create a Python virtual environment.
 
 ```bash
 python -m venv .venv
 ```
 
-👉 This creates a local Python environment inside your project.
+This creates an isolated Python environment for the project.
 
 ---
 
-# 7. Activate Virtual Environment
+# 7. Activate the Virtual Environment
 
-## Windows
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-## Mac / Linux
-
-```bash
-source .venv/bin/activate
-```
-
-Once activated, you will see:
+Once activated, your terminal should display:
 
 ```text
 (.venv)
@@ -137,101 +137,171 @@ Once activated, you will see:
 
 ---
 
+<<<<<<< HEAD
 # 8. Install Playwright
+=======
+# 8. Install Project Dependencies
 
-Install Playwright:
+Install all required Python packages.
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs all dependencies required by the automation framework.
+
+---
+
+# 9. Install Playwright
+>>>>>>> b3a8bda (Update README with environment setup guide)
+
+Install the Playwright package.
 
 ```bash
 pip install playwright
 ```
 
-Now install browser binaries:
+Install the required browser binaries.
 
 ```bash
 playwright install
 ```
 
-👉 This downloads Chromium, Firefox, and WebKit browsers.
+This downloads the supported browsers (Chromium, Firefox, and WebKit).
 
 ---
 
 # 9. Verify Playwright Installation
 
+Run:
+
 ```bash
 playwright --version
 ```
 
-If you see a version number, Playwright is installed successfully ✅
+If a version number is displayed, Playwright has been installed successfully.
 
 ---
 
+<<<<<<< HEAD
 # 10. Configure Python in VS Code
+=======
+# 11. Configure Python Interpreter in VS Code
+>>>>>>> b3a8bda (Update README with environment setup guide)
 
 1. Press **Ctrl + Shift + P**
-2. Search: **Python: Select Interpreter**
-3. Select the interpreter inside `.venv`
+2. Search for **Python: Select Interpreter**
+3. Select the interpreter located in the `.venv` folder.
 
 Example:
 
 ```text
-.venv/Scripts/python.exe
+.venv\Scripts\python.exe
 ```
 
-👉 This ensures VS Code uses the correct environment.
+This ensures Visual Studio Code uses the correct Python environment.
 
 ---
 
+<<<<<<< HEAD
 # 11. Git Workflow (Daily Use)
+=======
+# 12. Run the Sample Login Test
+>>>>>>> b3a8bda (Update README with environment setup guide)
 
-## Get latest code
+Verify that the framework has been configured correctly.
+
+```bash
+pytest tests/test_login.py
+```
+
+Expected Result:
+
+- Browser launches successfully.
+- Login automation is executed.
+- Test execution result is displayed in the terminal.
+
+If the test runs successfully, your environment setup is complete.
+
+---
+
+# 13. Daily Git Workflow
+
+## Before Starting Work
+
+Pull the latest changes from GitHub.
 
 ```bash
 git pull
 ```
 
-👉 Always run this before starting work.
-
 ---
 
-## Save your changes
+## After Completing Your Changes
+
+Stage your changes.
 
 ```bash
 git add .
 ```
 
-👉 Stages your changes.
+Commit your changes.
 
 ```bash
-git commit -m "your message here"
+git commit -m "Describe your changes"
 ```
 
-👉 Saves your work locally.
+Push your changes to GitHub.
 
 ```bash
 git push
 ```
 
-👉 Sends your changes to GitHub.
+---
+
+# 14. Project Structure
+
+```text
+Login Module
+│
+├── data
+│
+├── pages
+│
+├── tests
+│
+├── utils
+│
+├── screenshots
+│
+├── README.md
+│
+├── requirements.txt
+│
+└── runner.py
+```
 
 ---
 
-# 13. Troubleshooting
+# 15. Troubleshooting
 
-## Python not found
+## Python Not Found
 
-* Reinstall Python
-* Make sure **“Add to PATH”** is checked
-
----
-
-## Git not found
-
-* Reinstall Git
-* Enable **Add Git to PATH**
+- Reinstall Python.
+- Ensure **Add Python to PATH** is selected during installation.
 
 ---
 
-## Playwright browsers missing
+## Git Not Found
+
+- Reinstall Git.
+- Ensure Git is added to the system PATH.
+
+---
+
+## Playwright Browsers Missing
+
+Run:
 
 ```bash
 playwright install
@@ -239,7 +309,9 @@ playwright install
 
 ---
 
-## Missing Python modules
+## Missing Python Modules
+
+Run:
 
 ```bash
 pip install -r requirements.txt
@@ -247,25 +319,41 @@ pip install -r requirements.txt
 
 ---
 
-# ✅ Setup Checklist
+# Current POC Scope
 
-Make sure everything below is completed:
+The current Proof of Concept (POC) includes the following components:
 
-* Python installed
-* Git installed
-* VS Code installed
-* Required extensions installed
-* Project cloned
-* Virtual environment created
-* Virtual environment activated
-* Dependencies installed
-* Playwright installed
-* Browsers installed
-* Python interpreter configured
-* Sample test executed successfully
+- ✅ Playwright Framework Setup
+- ✅ Python Integration
+- ✅ Page Object Model (POM)
+- ✅ Data-Driven Testing (Excel)
+- ✅ Login Module Automation
+- ✅ Git Version Control
+- ✅ Project Environment Setup Guide
 
 ---
 
-🎉 Once all steps are done, your environment is ready for automation development!
+# Environment Setup Checklist
+
+<<<<<<< HEAD
+---
+=======
+Before executing any automation, ensure the following tasks have been completed.
+
+- [ ] Python installed
+- [ ] Git installed
+- [ ] Visual Studio Code installed
+- [ ] Required VS Code extensions installed
+- [ ] Repository cloned successfully
+- [ ] Virtual environment created
+- [ ] Virtual environment activated
+- [ ] Project dependencies installed
+- [ ] Playwright installed
+- [ ] Playwright browsers installed
+- [ ] Python interpreter configured
+- [ ] Sample login test executed successfully
 
 ---
+
+Your machine is now fully configured and ready to develop and execute automation tests using the Playwright + Python Automation Framework.
+>>>>>>> b3a8bda (Update README with environment setup guide)
