@@ -137,9 +137,6 @@ Once activated, your terminal should display:
 
 ---
 
-<<<<<<< HEAD
-# 8. Install Playwright
-=======
 # 8. Install Project Dependencies
 
 Install all required Python packages.
@@ -153,7 +150,7 @@ This installs all dependencies required by the automation framework.
 ---
 
 # 9. Install Playwright
->>>>>>> b3a8bda (Update README with environment setup guide)
+
 
 Install the Playwright package.
 
