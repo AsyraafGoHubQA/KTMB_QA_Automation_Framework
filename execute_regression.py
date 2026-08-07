@@ -16,9 +16,12 @@ result = subprocess.run([
     "pytest",
     "tests/test_login.py",
     "-v",
+    "--headed",
+    "--browser",
+    "chromium",
     f"--html={latest_report}",
     "--self-contained-html"
-])
+    ])
 
 if result.returncode in [0, 1]:
     ReportManager.archive_report(

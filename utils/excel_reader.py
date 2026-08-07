@@ -16,7 +16,8 @@ def read_login_data(file_path, tc=None):
             "tc": row[0],
             "username": row[1],
             "password": row[2],
-            "expected": row[3]
+            "expected": row[3],
+            "validation": row[4]
         }
 
         print("RECORD =", record)
